@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> LIST TRANSFORM</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css">
+       <style>
+        *{ 
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    align-items: center;
+    justify-content: center;
+}
+.listclass{
+    margin-top: 100px;
+    margin-left: 100px;
+ }
+
+ul{
+position:relative;
+transform: skewy(-15deg);
+}
+
+li {
+    /* position: relative; */
+    list-style: none;
+    width: 200px;
+    padding: 15px;
+    background: #3e3f46;
+    z-index: calc(1 * var(--1));
+    transition: 0.5s;
+}
+li:hover{
+    background: #996fae;
+    transform:translateX(-50px);
+}
+li ::before{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-icon);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+
+li::hover::before{
+    background:#7b5190;
+}
+
+li::after{
+    /* content:""; */
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+
+}
+
+li::hover::after{
+    background: #86589d;
+
+}
+
+li a {
+ text-decoration: none;
+ color:#999;
+ display: block;
+ text-transform: uppercase;
+ letter-spacing: 0.5em;
+ transform: 0.5s;
+}
+li:hover a {
+    color:#fff;
+}
+
+li:last-child::after{
+box-shadow: -120px 120px 20px rgba(0 ,0 ,0 ,0.25);
+}
+
+       </style>
+        
+    </head>
+<body>
+
+<div class="listclass">
+<ul>
+    <li style="--i:6;" data icon="&#xf015">
+        < a href="#">HOME</a>
+    </li>
+    <li style="--i:5;" data icon="&#xf2bb">
+        < a href="#">ABOUT</a>
+    </li>
+    <li style="--i:4;" data icon="&#xf03a">
+        < a href="#">SERVICE</a>
+    </li>
+    <li style="--i:3;" data icon="&#xf07c">
+        < a href="#">PORTFOLIO</a>
+    </li>
+    <li style="--i:2;" data icon="&#xe533">
+        < a href="#">HOME</a>
+    </li>
+    <li style="--i:1;" data icon="&#x40">
+        < a href="#">CONTACT</a>
+    </li>
+</ul>
+</div>
+</body>
+</html>
