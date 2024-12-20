@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style> 
+    .main{
+        display:flex;
+        align-items: center;
+        justify-content: space-around; 
+        height: 400px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button type="submit" class="start">start changing color</button>
+        <button type="submit" class="stop">stop changing color</button>
+    </div>
+</body>
+<script>
+    
+    let color=''
+const randomcolor = function(){
+const hex ="0123456789ABCDEF"
+let color = "#"
+for(let i=0;i<6;i++){
+    color += hex[Math.floor(Math.random()*16)]
+}
+return color;
+}
+
+ const start = document.querySelector('.start')
+ const stop = document.querySelector('.stop')
+
+ const change = function(){
+    document.body.style.backgroundColor =randomcolor()
+ } 
+
+ let interval 
+
+ start.addEventListener('click',function(e){
+    //  e.preventDefault() 
+  interval =  setInterval( change,2000);
+     
+ })
+
+ 
+ 
+ stop.addEventListener('click',function(e){
+    //  e.preventDefault()
+     clearInterval(interval)
+ })
+ 
+</script>
+</html>
