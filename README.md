@@ -1,11 +1,8 @@
-- 👋 Hi, I’m @Arpit-090
-- 👀 I’m interested in everything that is creative.
-- 🌱 I’m currently learning the frontend.
-- 💞️ I’m looking to collaborate on ......
-- 📫 How to reach me by call on 7388588522
-- ⚡ Fun fact: you will never bore with me if you are also creative.
+# React + Vite
 
-<!---
-Arpit-090/Arpit-090 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
