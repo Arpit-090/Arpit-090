@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.heading{
+    align-items:center;
+    margin: 10px 450px;
+}
+.h1{
+    text-align: center;
+    margin: 200px 200px;
+    padding: 100px 100px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+ .calform{
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+ }
+ #item{
+    text-size-adjust: 100px;
+    padding: 8px;
+ }
