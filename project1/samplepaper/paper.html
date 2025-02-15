@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Quiz</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+   <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+   </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>History Quiz</h1>
+    <form>
+      <!-- Question 1 -->
+      <div class="question">
+        <p>1. Who was the first President of the United States?</p>
+        <label><input type="radio" name="q1" value="a"> George Washington</label><br>
+        <label><input type="radio" name="q1" value="b"> Thomas Jefferson</label><br>
+        <label><input type="radio" name="q1" value="c"> John Adams</label><br>
+        <label><input type="radio" name="q1" value="d"> Benjamin Franklin</label>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p>2. What year did World War II end?</p>
+        <label><input type="radio" name="q2" value="a"> 1940</label><br>
+        <label><input type="radio" name="q2" value="b"> 1945</label><br>
+        <label><input type="radio" name="q2" value="c"> 1950</label><br>
+        <label><input type="radio" name="q2" value="d"> 1960</label>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p>3. Who discovered America in 1492?</p>
+        <label><input type="radio" name="q3" value="a"> Christopher Columbus</label><br>
+        <label><input type="radio" name="q3" value="b"> Ferdinand Magellan</label><br>
+        <label><input type="radio" name="q3" value="c"> Marco Polo</label><br>
+        <label><input type="radio" name="q3" value="d"> Vasco da Gama</label>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <p>4. What was the name of the ship that brought the Pilgrims to America?</p>
+        <label><input type="radio" name="q4" value="a"> Titanic</label><br>
+        <label><input type="radio" name="q4" value="b"> Mayflower</label><br>
+        <label><input type="radio" name="q4" value="c"> Santa Maria</label><br>
+        <label><input type="radio" name="q4" value="d"> Queen Mary</label>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question">
+        <p>5. What ancient civilization built the Pyramids?</p>
+        <label><input type="radio" name="q5" value="a"> Romans</label><br>
+        <label><input type="radio" name="q5" value="b"> Greeks</label><br>
+        <label><input type="radio" name="q5" value="c"> Egyptians</label><br>
+        <label><input type="radio" name="q5" value="d"> Babylonians</label>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question">
+        <p>6. Who was the leader of the Soviet Union during World War II?</p>
+        <label><input type="radio" name="q6" value="a"> Vladimir Lenin</label><br>
+        <label><input type="radio" name="q6" value="b"> Joseph Stalin</label><br>
+        <label><input type="radio" name="q6" value="c"> Mikhail Gorbachev</label><br>
+        <label><input type="radio" name="q6" value="d"> Nikita Khrushchev</label>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question">
+        <p>7. What year did the Berlin Wall fall?</p>
+        <label><input type="radio" name="q7" value="a"> 1980</label><br>
+        <label><input type="radio" name="q7" value="b"> 1985</label><br>
+        <label><input type="radio" name="q7" value="c"> 1989</label><br>
+        <label><input type="radio" name="q7" value="d"> 1991</label>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question">
+        <p>8. What empire was ruled by Julius Caesar?</p>
+        <label><input type="radio" name="q8" value="a"> Greek Empire</label><br>
+        <label><input type="radio" name="q8" value="b"> Roman Empire</label><br>
+        <label><input type="radio" name="q8" value="c"> Ottoman Empire</label><br>
+        <label><input type="radio" name="q8" value="d"> Persian Empire</label>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question">
+        <p>9. Who was the British Prime Minister during most of World War II?</p>
+        <label><input type="radio" name="q9" value="a"> Winston Churchill</label><br>
+        <label><input type="radio" name="q9" value="b"> Neville Chamberlain</label><br>
+        <label><input type="radio" name="q9" value="c"> Margaret Thatcher</label><br>
+        <label><input type="radio" name="q9" value="d"> Tony Blair</label>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question">
+        <p>10. What was the name of the war between the North and South in the United States?</p>
+        <label><input type="radio" name="q10" value="a"> Revolutionary War</label><br>
+        <label><input type="radio" name="q10" value="b"> Civil War</label><br>
+        <label><input type="radio" name="q10" value="c"> War of 1812</label><br>
+        <label><input type="radio" name="q10" value="d"> Spanish-American War</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

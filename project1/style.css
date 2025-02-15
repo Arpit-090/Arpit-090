@@ -1,0 +1,49 @@
+ *{
+    margin:0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+background: fixed;
+
+}
+
+.folder{
+    width=1oo%;
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+} 
+
+.hleft{
+    width: 55%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.hleftimg{
+margin-left:5px;
+}
+.hleftlist>ul{
+    display:inline;
+    align-items: center;
+    gap: 20px;
+}
+.hright{
+    width: 45%;
+    background-color: bisque;
+}
+
+/*
+
+.sec_b{
+    width: 1oo%;
+    display: flex;
+   justify-content: space-between;
+} 
+.poster{
+width: 100%;
+}
+
+ */
